@@ -1,23 +1,23 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
   <diagram name="Page-1" id="gYPvYl9qdKIMyPJZguIg">
-    <mxGraphModel dx="2163" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fvEkBXh12r8Sc9a3koQC-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="fvEkBXh12r8Sc9a3koQC-2" target="fvEkBXh12r8Sc9a3koQC-4" edge="1">
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="fvEkBXh12r8Sc9a3koQC-2" target="fvEkBXh12r8Sc9a3koQC-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fvEkBXh12r8Sc9a3koQC-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="fvEkBXh12r8Sc9a3koQC-2" target="fvEkBXh12r8Sc9a3koQC-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fvEkBXh12r8Sc9a3koQC-2" value="Child chooses continent/general location by clicking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="360" y="10" width="160" height="60" as="geometry" />
+          <mxGeometry x="370" y="55" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fvEkBXh12r8Sc9a3koQC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="fvEkBXh12r8Sc9a3koQC-4" target="fvEkBXh12r8Sc9a3koQC-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fvEkBXh12r8Sc9a3koQC-4" value="&lt;div&gt;A pre-generated image is shown, and child is prompted to enter the scene description&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="360" y="90" width="160" height="60" as="geometry" />
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-4" value="&lt;div&gt;A pre-generated image is shown, and child is prompted to enter the scene description&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="810" y="55" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fvEkBXh12r8Sc9a3koQC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="fvEkBXh12r8Sc9a3koQC-6" target="fvEkBXh12r8Sc9a3koQC-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -145,8 +145,8 @@
         <mxCell id="fvEkBXh12r8Sc9a3koQC-46" value="The continent is somehow worked into the prompt too" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="560" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Mim_0kwXnrrobwF0F7jD-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-5" width="280" height="240" as="geometry" />
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-1" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="-5" width="280" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Mim_0kwXnrrobwF0F7jD-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;LEGEND&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="75" width="130" height="30" as="geometry" />
@@ -175,20 +175,32 @@
         <mxCell id="Mim_0kwXnrrobwF0F7jD-9" value="UI screen" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="105" y="105" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Mim_0kwXnrrobwF0F7jD-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="20" y="145" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Mim_0kwXnrrobwF0F7jD-11" value="AI operation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-11" value="API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="105" y="140" width="65" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Mim_0kwXnrrobwF0F7jD-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="20" y="180" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Mim_0kwXnrrobwF0F7jD-13" value="Python operation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="105" y="175" width="95" height="30" as="geometry" />
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-13" value="Unity" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="91" y="175" width="95" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Mim_0kwXnrrobwF0F7jD-14" value="Image won&#39;t be the same at all, but maybe the main idea will still be there" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1110" y="535" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-3" value="" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="215" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-5" value="AI" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="76" y="216" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-7" value="" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="250" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-8" value="Database" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="76" y="250" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

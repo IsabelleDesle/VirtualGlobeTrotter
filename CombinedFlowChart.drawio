@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Page-1" id="gYPvYl9qdKIMyPJZguIg">
+    <mxGraphModel dx="1804" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="fvEkBXh12r8Sc9a3koQC-2" target="fvEkBXh12r8Sc9a3koQC-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="TnImfGeaR-GWyji84rdv-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="300.0000000000001" as="sourcePoint" />
+            <mxPoint x="587" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-2" value="Child chooses continent/general location by clicking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="365" y="55" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.425;exitY=0.933;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;exitPerimeter=0;" parent="1" source="fvEkBXh12r8Sc9a3koQC-2" target="fvEkBXh12r8Sc9a3koQC-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fvEkBXh12r8Sc9a3koQC-4" target="TnImfGeaR-GWyji84rdv-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-4" value="&lt;div&gt;Database : A pre-generated image + music&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="780" y="55" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="TnImfGeaR-GWyji84rdv-11" target="fvEkBXh12r8Sc9a3koQC-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="317" y="360" as="sourcePoint" />
+            <mxPoint x="647.9999999999995" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-20" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="fvEkBXh12r8Sc9a3koQC-26" vertex="1" connectable="0">
+          <mxGeometry x="-0.2622" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-6" value="Voice-To-Prompt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="360" y="270" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="fvEkBXh12r8Sc9a3koQC-8" target="fvEkBXh12r8Sc9a3koQC-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-8" value="&lt;div&gt;The child speaks the prompt&lt;/div&gt;&lt;div&gt;(Eg. Waterfall in the forest)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="358" y="180" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="fvEkBXh12r8Sc9a3koQC-11" target="TnImfGeaR-GWyji84rdv-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-11" value="&lt;div&gt;Text-To-Image model creates the image&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="567" y="403" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-14" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="250" as="sourcePoint" />
+            <mxPoint x="1362.857142857143" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-17" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="750" as="sourcePoint" />
+            <mxPoint x="1390" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-42" value="&lt;div&gt;Image-Text-To-Image model recreates the image with the improvement&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="570" y="540" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-1" value="" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="-5" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;LEGEND&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="75" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-4" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="30" as="sourcePoint" />
+            <mxPoint x="50" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-5" value="Where the user goes/ user screen change" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="25" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-6" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="90" as="sourcePoint" />
+            <mxPoint x="50" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-7" value="Going back" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="60" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="20" y="110" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-9" value="UI screen" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="105" y="105" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="20" y="145" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-11" value="API" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="105" y="140" width="65" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="20" y="180" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mim_0kwXnrrobwF0F7jD-13" value="Unity" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="91" y="175" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-3" value="" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="215" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-5" value="AI" style="whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="76" y="216" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-7" value="" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="250" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-8" value="Database" style="whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
+          <mxGeometry x="76" y="250" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-9" value="IMAGE 1: 360° image and music in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1051" y="55" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TnImfGeaR-GWyji84rdv-11" target="TnImfGeaR-GWyji84rdv-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="777" y="300.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-15" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="TnImfGeaR-GWyji84rdv-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.0161" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-11" value="Corresponding preprocessed Image in db?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="587" y="240" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-16" value="REPLACE IMAGE 1 BY IMAGE 2: 360° image and music in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="271" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-17" value="&lt;div&gt;Database : A pre-generated image + music&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="788" y="270" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TnImfGeaR-GWyji84rdv-17" target="TnImfGeaR-GWyji84rdv-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="310" as="sourcePoint" />
+            <mxPoint x="650" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnImfGeaR-GWyji84rdv-24" value="REPLACE IMAGE 1 BY 360° image and music in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="1061" y="403" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

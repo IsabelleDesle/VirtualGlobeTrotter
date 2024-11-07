@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.4">
   <diagram name="Page-1" id="gYPvYl9qdKIMyPJZguIg">
-    <mxGraphModel dx="2284" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2472" dy="1059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -115,12 +115,13 @@
         <mxCell id="fvEkBXh12r8Sc9a3koQC-20" value="The child is shown the newly generated image and can look around" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="360" y="850" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fvEkBXh12r8Sc9a3koQC-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="fvEkBXh12r8Sc9a3koQC-21" target="fvEkBXh12r8Sc9a3koQC-10" edge="1">
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="fvEkBXh12r8Sc9a3koQC-21" target="fvEkBXh12r8Sc9a3koQC-42" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="440" y="1010" />
               <mxPoint x="830" y="1010" />
-              <mxPoint x="830" y="390" />
+              <mxPoint x="830" y="620" />
+              <mxPoint x="1010" y="620" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -139,7 +140,7 @@
         <mxCell id="fvEkBXh12r8Sc9a3koQC-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="fvEkBXh12r8Sc9a3koQC-42" target="fvEkBXh12r8Sc9a3koQC-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fvEkBXh12r8Sc9a3koQC-42" value="&lt;div&gt;Image-Text-To-Image model recreates the image with the improvement&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="fvEkBXh12r8Sc9a3koQC-42" value="&lt;div&gt;Image-To-Image model recreates the image with the improvement&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="930" y="520" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fvEkBXh12r8Sc9a3koQC-46" value="The continent is somehow worked into the prompt too" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -190,16 +191,16 @@
         <mxCell id="Mim_0kwXnrrobwF0F7jD-14" value="Image won&#39;t be the same at all, but maybe the main idea will still be there" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1110" y="535" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="TnImfGeaR-GWyji84rdv-3" value="" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+        <mxCell id="TnImfGeaR-GWyji84rdv-3" value="" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="215" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="TnImfGeaR-GWyji84rdv-5" value="AI" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="TnImfGeaR-GWyji84rdv-5" value="AI" style="whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="76" y="216" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="TnImfGeaR-GWyji84rdv-7" value="" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" vertex="1" parent="1">
+        <mxCell id="TnImfGeaR-GWyji84rdv-7" value="" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="250" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="TnImfGeaR-GWyji84rdv-8" value="Database" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="TnImfGeaR-GWyji84rdv-8" value="Database" style="whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="76" y="250" width="120" height="20" as="geometry" />
         </mxCell>
       </root>

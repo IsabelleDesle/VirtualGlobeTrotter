@@ -1,12 +1,48 @@
 # VirtualGlobeTrotter
 Team Project Virtual GlobeTrotter
 
-added 
+----------
+07/11/2024 afternoon : Meeting Frederik, Viola, Atvars and Isabelle 
+Don't define your week 3 and 4 sprints
+Sprints should be filled only for the next week.
+ 
+Beside that everything looks good.
+It's important that when it's in progress, someone is linked to the card.
+For future, it doesn't really matter who does what.
+ 
+It's okay if the project manager Ergo don't respond now.
+We can add the questions in Trello, which we have done already.
+ 
+It's okay to just have images.
+The outcome is not the most important thing.
+ 
+>When you generate something with ai, it will be unrealistic. Does it need to be realistic?
+>Frederik : not very important that it is educationally completely correct (kangaroos around the pyramids)
+If anything, it's better for the kids, and it encourages creativity.
+ 
+The database should not be in the cloud, that's perfect.
+ 
+Do we index with Lucene?
+Maybe don't use MYSQL. Don't think about it now, it's okay to not know this yet.
+Probably SQL is not the best option, but the question stays open. Frederik will ask Wouter, but for the Proof of Concept, we can use SQL.
+SQL has full text search, but the way of querying is different.
+It's only 3 weeks, don't do anything crazy. If it's a few prompts, use SQL.
+ 
+Assignment extended to 18:30
+---- 
+
+
+06/11/2024 evening
+added on github: 
 presentation version 1 
 gitignore 
 example photo to provide path in database
 sql script
+
 -------
+
+meeting Viola, Atvars and Isabelle 
+04/11/2024 afternoon
 
 > Agile Scrum!
 

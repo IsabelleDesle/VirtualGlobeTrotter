@@ -34,4 +34,4 @@ CREATE TABLE MusicImage (
 
 INSERT INTO Image (FilePath, Description, Tag)
 VALUES 
-('https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/IMG_20241106_145012.jpg', 'Aligre', 'Paris, city, church');
+('https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Database/IMG_20241106_145012.jpg', 'Aligre', 'Paris, city, church');

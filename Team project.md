@@ -1,3 +1,13 @@
+# VirtualGlobeTrotter
+Team Project Virtual GlobeTrotter
+
+added 
+presentation version 1 
+gitignore 
+example photo to provide path in database
+sql script
+-------
+
 > Agile Scrum!
 
 Proof of concept for somebody else. -> think about recommendations if the original idea does not work.
@@ -43,3 +53,4 @@ Make an environment, add music
 > - retraining and fine tuning the models to our needs: a lot of labeled data is needed, a lot of time is needed.
 > - stitching the images together.
 > - the application may be very slow due to a lot of generating that comes with it.
+

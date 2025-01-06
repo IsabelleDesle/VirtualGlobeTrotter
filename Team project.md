@@ -90,3 +90,10 @@ Make an environment, add music
 > - stitching the images together.
 > - the application may be very slow due to a lot of generating that comes with it.
 
+06/01/2024 week 1 
+every day meeting at 9:30. 
+on the spot creation of images is not a must 
+a meeting with the customer needs to be planned (cf mail)
+full text search in mysql okay using transcription of invoice input to text
+
+

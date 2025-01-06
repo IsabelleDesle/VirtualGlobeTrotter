@@ -34,7 +34,7 @@ VALUES
     'Throughout the year, Disneyland Paris hosts events such as Halloween Festival, Christmas Magic, and Marvel Summer of Superheroes.\n\n'
     'Accessible within 35 minutes from Paris, Disneyland Paris is a must-visit for families and Disney fans alike.',
     'Magic, Theme Park, Family Fun, Disney, France, Travel, Attractions, Adventure, Fairy Tales, Entertainment, Europe', 
-    'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Disney'
+    'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Disney/disney.jpg'
 );
 
 INSERT INTO images (title, content, tags, image_path) 
@@ -42,7 +42,7 @@ VALUES
 ('Sunset at the Beach', 
 'A beautiful sunset over the ocean with vibrant colors.', 
 'sunset, beach, ocean, nature', 
-'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Beach')
+'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Beach.jpg')
 ;
 
 INSERT INTO images (title, content, tags, image_path) 
@@ -50,7 +50,7 @@ VALUES
 ('Rainforest',
 'A panoramic 360° view of a lush tropical rainforest with towering trees, dense green foliage, cascading vines, and sunlight filtering through the canopy',
 'rainforest, tree, tropical, leafs, nature',
-'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Rainforest')
+'C:/Users/desle/OneDrive/2S1_005_TEAM_PROJECT/Images_4K/Rainforest/rainforest.jpg')
 ;
 /*
 -- Searching for Images Using a Prompt

@@ -2,7 +2,7 @@
 export default {
   methods: {
     start() {
-      this.$router.push('/new-page')
+      this.$router.push('/map')
     },
   },
 }

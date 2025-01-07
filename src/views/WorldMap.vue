@@ -62,8 +62,11 @@
 export default {
   methods: {
     handleContinentClick(continent) {
-      alert(`You clicked on ${continent}`)
-      this.$router.push('/new-page')
+      const dataToSend = continent
+      this.$router.push({
+        path: '/loading',
+        query: { dataToPost: dataToSend }, // Pass the string via query parameters
+      })
     },
   },
 }

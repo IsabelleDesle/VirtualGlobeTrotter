@@ -105,7 +105,7 @@ using json format to connect applications
 merge webservice repo into to other
 researching ai pipeline: webservice=>voice input=>json file=>database=>path added in json file =>unity=>reads periodically the json file=>show assets in path in json file in immersive room 
 
-test in immersive room: 08/01 - 10:30. Meeting at immersive room. project on USB stick
+test in immersive room: Thursday 09/01 - 10:30. Meeting at immersive room. project on USB stick
 
 
 

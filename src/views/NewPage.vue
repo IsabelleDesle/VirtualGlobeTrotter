@@ -1,115 +1,104 @@
 <script>
-import axios from "axios";
-import { ref, computed } from 'vue';  // Import Vue composition API utilities
+import axios from 'axios'
+import { ref, computed } from 'vue' // Import Vue composition API utilities
 
 // Create a reusable speech recognition service
 const createSpeechRecognition = () => {
-  if (!("webkitSpeechRecognition" in window)) {
-    return null;
+  if (!('webkitSpeechRecognition' in window)) {
+    return null
   }
-  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  const recognition = new SpeechRecognition();
-  recognition.lang = "en-US";
-  recognition.interimResults = false;
-  recognition.maxAlternatives = 1;
-  return recognition;
-};
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+  const recognition = new SpeechRecognition()
+  recognition.lang = 'en-US'
+  recognition.interimResults = false
+  recognition.maxAlternatives = 1
+  return recognition
+}
 
 // API service
 const api = {
   async changeBackground(input) {
     try {
-      const response = await axios.post("http://127.0.0.1:5000/change-background", { input });
-      return response.data.background_image;
+      const response = await axios.post('http://127.0.0.1:5000/change-background', { input })
+      return response.data.background_image
     } catch (error) {
-      console.error("Error changing background:", error);
-      throw error;
+      console.error('Error changing background:', error)
+      throw error
     }
-  }
-};
+  },
+}
 
 export default {
-  name: 'BackgroundChanger',  // Named component for better debugging
+  name: 'BackgroundChanger', // Named component for better debugging
 
   setup() {
-    const userInput = ref("");
-    const backgroundImage = ref("https://i.redd.it/8kdbhjg3fza61.jpg");
-    const isListening = ref(false);
-    const recognition = createSpeechRecognition();
+    const userInput = ref('')
+    const backgroundImage = ref('https://i.redd.it/8kdbhjg3fza61.jpg')
+    const isListening = ref(false)
+    const recognition = createSpeechRecognition()
 
     // Computed property for background style
     const backgroundStyle = computed(() => ({
-      backgroundImage: `url(${backgroundImage.value})`
-    }));
+      backgroundImage: `url(${backgroundImage.value})`,
+    }))
 
     const startListening = () => {
       if (!recognition) {
-        alert("Your browser does not support speech recognition. Please use Chrome.");
-        return;
+        alert('Your browser does not support speech recognition. Please use Chrome.')
+        return
       }
 
       recognition.onstart = () => {
-        isListening.value = true;
-        console.log("Voice recognition started...");
-      };
+        isListening.value = true
+        console.log('Voice recognition started...')
+      }
 
       recognition.onresult = async (event) => {
-        isListening.value = false;
-        const transcript = event.results[0][0].transcript;
-        userInput.value = transcript;
+        isListening.value = false
+        const transcript = event.results[0][0].transcript
+        userInput.value = transcript
 
         try {
-          const newBackground = await api.changeBackground(transcript);
-          backgroundImage.value = newBackground;
+          const newBackground = await api.changeBackground(transcript)
+          backgroundImage.value = newBackground
         } catch (error) {
           // Handle error appropriately
-          console.error("Failed to change background:", error);
+          console.error('Failed to change background:', error)
         }
-      };
+      }
 
       recognition.onerror = (event) => {
-        isListening.value = false;
-        console.error("Speech recognition error:", event.error);
-      };
+        isListening.value = false
+        console.error('Speech recognition error:', event.error)
+      }
 
       recognition.onend = () => {
-        isListening.value = false;
-        console.log("Voice recognition ended.");
-      };
+        isListening.value = false
+        console.log('Voice recognition ended.')
+      }
 
-      recognition.start();
-    };
+      recognition.start()
+    }
 
     return {
       userInput,
       backgroundStyle,
       isListening,
       startListening,
-    };
-  }
-};
+    }
+  },
+}
 </script>
 
 <template>
   <div :style="backgroundStyle" class="background-container">
     <div class="input-container">
-      <p v-if="userInput" class="transcript-display">
-        You said: "{{ userInput }}"
-      </p>
+      <p v-if="userInput" class="transcript-display">You said: "{{ userInput }}"</p>
       <div class="button-container">
-        <button
-          @click="startListening"
-          :disabled="isListening"
-          class="primary-button"
-        >
-          {{ isListening ? "Listening..." : "Start Voice Input" }}
+        <button @click="startListening" :disabled="isListening" class="primary-button">
+          {{ isListening ? 'Listening...' : 'Start Voice Input' }}
         </button>
-        <button
-          @click="$router.push('/')"
-          class="secondary-button"
-        >
-          Go Back
-        </button>
+        <button @click="$router.push('/')" class="secondary-button">Go Back</button>
       </div>
     </div>
   </div>
@@ -121,7 +110,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   position: fixed;
-  inset: 0;  /* Modern alternative to setting top, right, bottom, left */
+  inset: 0; /* Modern alternative to setting top, right, bottom, left */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +131,7 @@ export default {
 }
 
 .transcript-display {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -157,11 +146,13 @@ export default {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .primary-button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 

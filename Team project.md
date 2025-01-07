@@ -90,10 +90,23 @@ Make an environment, add music
 > - stitching the images together.
 > - the application may be very slow due to a lot of generating that comes with it.
 
-06/01/2024 week 1 
+06/01/2025 week 1 
 every day meeting at 9:30. 
 on the spot creation of images is not a must 
 a meeting with the customer needs to be planned (cf mail)
 full text search in mysql okay using transcription of invoice input to text
+
+07/01/2025
+the concept : 
+pretrained images/animations/videos will be used. 
+training on the spot is option due to constraint time and costs. 
+
+using json format to connect applications
+merge webservice repo into to other
+researching ai pipeline: webservice=>voice input=>database=>images or path =>unity=>immersive room 
+
+test in immersive room if possible tomorrow. 
+
+
 
 

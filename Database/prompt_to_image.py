@@ -126,7 +126,9 @@ def search_images(conn, search_terms, output_file):
 
 # Main function to execute the entire process
 def main():
-    output_file = r"C:\\Users\\desle\\OneDrive - Hogeschool West-Vlaanderen\\TeamProject\\Database\\prompt.json"
+
+    output_file = r"C:\\Users\\desle\\LOCAL_STUFF\\LOC_2S1_005_TEAM_PROJECT\\VirtualGlobeTrotter\\Database\\prompt.json"
+   
 
     transcribe_voice_input(output_file)
     print(f"Transcript saved to {output_file}")

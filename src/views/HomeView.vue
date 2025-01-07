@@ -45,7 +45,7 @@ h2 {
 
 button {
   padding: 4vh 8vw; /* Use viewport units for responsive sizing */
-  font-size: 2vh; /* Adjust font size based on viewport height */
+  font-size: 5vh; /* Adjust font size based on viewport height */
   color: #fff;
   background-color: #007bff;
   cursor: pointer;

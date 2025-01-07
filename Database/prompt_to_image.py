@@ -24,7 +24,8 @@ def transcribe_voice_input(output_file):
 
                 # Break the loop after 10 seconds
                 if elapsed_time > 10:
-                    print("Time limit reached. Stopping transcription.")
+                    # print("Time limit reached. Stopping transcription.")
+                    print("")
                     break
 
                 # Listen to the audio
@@ -39,7 +40,8 @@ def transcribe_voice_input(output_file):
                     transcriptions.append({"timestamp": elapsed_time, "text": text})
 
                 except sr.UnknownValueError:
-                    print("Google Web Speech could not understand audio")
+                    #print("Google Web Speech could not understand audio")
+                    print("")
                 except sr.RequestError as e:
                     print(f"Could not request results from Google Web Speech service; {e}")
 
@@ -69,7 +71,7 @@ def connect_to_database():
             port="3306",             # Port number (default is 3306)
             user='root',             # Your MySQL username
             password='root',         # Your MySQL password
-            database='vgt2'          # The database you want to use
+            database='vgt'          # The database you want to use
         )
         return conn
     except mysql.connector.Error as err:

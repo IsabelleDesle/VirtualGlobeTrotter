@@ -83,11 +83,37 @@ def search_images(conn, search_terms, output_file):
     try:
         cursor = conn.cursor(dictionary=True)
 
+        # query = """
+        # SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
+        # FROM images
+        # ORDER BY relevance DESC
+        # LIMIT 1
+        # """
+
+
+        #Avoid Excessive LIKE Queries: Use them only as a fallback for substring matches.
+
         query = """
-        SELECT id, title, content, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
-        FROM images
+        SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
+        FROM images 
+        WHERE MATCH(title, content, tags) AGAINST(%s)
+
+        UNION ALL
+        
+        SELECT id, title, tags, content, 0.5 AS relevance
+        FROM images 
+        WHERE 
+        (title LIKE CONCAT('%', %s, '%') 
+        OR content LIKE CONCAT('%', %s, '%') 
+        OR tags LIKE CONCAT('%', %s, '%'))
+        
+        AND id NOT IN (
+            SELECT id 
+            FROM images 
+            WHERE MATCH(title, content, tags) AGAINST(%s)
+        )
         ORDER BY relevance DESC
-        LIMIT 1
+        LIMIT 1 
         """
 
         # Execute the query with the search terms

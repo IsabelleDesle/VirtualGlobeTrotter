@@ -1,0 +1,3 @@
+Upscaled using Upscayl
+Original image dimensions were 256x144
+Were upscaled to 4x resolution

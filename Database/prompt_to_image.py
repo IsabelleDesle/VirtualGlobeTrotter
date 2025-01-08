@@ -58,6 +58,7 @@ def read_search_terms_from_file(filename):
         with open(filename, 'r') as file:
             data = json.load(file)
             search_terms = " ".join([entry["text"] for entry in data])
+            print(f"Search terms: {type(search_terms)}")
         return search_terms
     except FileNotFoundError:
         print(f"Error: The file {filename} does not exist.")
@@ -83,38 +84,37 @@ def search_images(conn, search_terms, output_file):
     try:
         cursor = conn.cursor(dictionary=True)
 
-        # query = """
-        # SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
-        # FROM images
-        # ORDER BY relevance DESC
-        # LIMIT 1
-        # """
+        query = """
+        SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
+        FROM images
+                ORDER BY relevance DESC
+        LIMIT 1
+        """
 
 
         #Avoid Excessive LIKE Queries: Use them only as a fallback for substring matches.
 
-        query = """
-        SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
-        FROM images 
-        WHERE MATCH(title, content, tags) AGAINST(%s)
-
-        UNION ALL
+        # query = """
+        # SELECT id, title, content, tags, continent, image_path, MATCH(title, content, tags) AGAINST(%s) AS relevance
+        # FROM images 
         
-        SELECT id, title, tags, content, 0.5 AS relevance
-        FROM images 
-        WHERE 
-        (title LIKE CONCAT('%', %s, '%') 
-        OR content LIKE CONCAT('%', %s, '%') 
-        OR tags LIKE CONCAT('%', %s, '%'))
+        # UNION ALL
         
-        AND id NOT IN (
-            SELECT id 
-            FROM images 
-            WHERE MATCH(title, content, tags) AGAINST(%s)
-        )
-        ORDER BY relevance DESC
-        LIMIT 1 
-        """
+        # SELECT id, title, content, tags, continent, image_path, 0.5 AS relevance
+        # FROM images 
+        # WHERE 
+        # (title LIKE CONCAT('%', %s, '%') 
+        # OR content LIKE CONCAT('%', %s, '%') 
+        # OR tags LIKE CONCAT('%', %s, '%'))
+        
+        # AND id NOT IN (
+        #     SELECT id 
+        #     FROM images 
+            
+        # )
+        # ORDER BY relevance DESC
+        # LIMIT 1 
+        # """
 
         # Execute the query with the search terms
         cursor.execute(query, (search_terms,))
@@ -125,6 +125,8 @@ def search_images(conn, search_terms, output_file):
             for result in results:
                 print(f"ID: {result['id']}")
                 print(f"Title: {result['title']}")
+                print(f"Tags: {result['tags']}")
+                print(f"Continent: {result['continent']}")
                 print(f"Relevance: {result['relevance']}")
                 print(f"Image Path: {result['image_path']}\n")
 

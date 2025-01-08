@@ -1,3 +1,9 @@
+# For AI_Atvars
+AI_Atvars/.venv
+AI_Atvars/Constants.py
+AI_Atvars/huggingFaceInference.py
+AI_Atvars/promptEnhancer.py
+
 # Ignore .env file
 .env
 .ipynb_checkpoints

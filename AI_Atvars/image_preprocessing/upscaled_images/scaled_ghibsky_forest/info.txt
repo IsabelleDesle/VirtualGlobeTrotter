@@ -1,0 +1,3 @@
+Again, upscaled using Upscayl
+Original images were 256x144
+Upscaled 8x with only a small drop in performance

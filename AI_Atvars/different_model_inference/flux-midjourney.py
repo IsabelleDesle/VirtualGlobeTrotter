@@ -3,7 +3,11 @@ from PIL import Image
 import time
 import io
 import time
+import sys
+import os
+sys.path.insert(0, os.path.abspath('./AI_Atvars/'))
 import Constants
+import datetime
 #
 #  Model too busy to make inference
 #
@@ -16,7 +20,7 @@ client = InferenceClient(model="strangerzonehf/Flux-Midjourney-Mix2-LoRA",
 print(f"Client created in {time.time()- start} seconds")
 
 response = client.text_to_image(
-    prompt="MJ v6, beautiful Canada forest landscape in the style of nature photography, scenic view, 8k --ar 16:9",
+    prompt="MJ v6, beautiful and serene winter Canada forest landscape in the style of nature photography, scenic view, 8k --ar 2:1",
     # height=576,
     # width=1024,
     # num_inference_steps=28,
@@ -32,5 +36,6 @@ print(response)
 
 # image = Image.open(io.BytesIO(response))
 
-response.save(r".images/flux-midjourney/canada_forest.jpg")
+save_path = os.path.abspath('./AI_Atvars/images/flux-midjourney/{0}.jpg'.format(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")))
+response.save(save_path)
 

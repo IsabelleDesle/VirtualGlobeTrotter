@@ -4,8 +4,11 @@ from PIL import Image
 import time
 import io
 import time
+import sys
+import os
+sys.path.insert(0, os.path.abspath('./AI_Atvars/'))
 import Constants
-
+import datetime # For naming the image
 #
 #   General inference client, the first model I tried, which was 
 #
@@ -34,5 +37,8 @@ print(response)
 
 # image = Image.open(io.BytesIO(response))
 
-response.save(r".images/claude-monet/canada_forest.jpg")
+
+save_path = os.path.abspath('./AI_Atvars/images/claude-monet/{0}.jpg'.format(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")))
+
+response.save(save_path)
 

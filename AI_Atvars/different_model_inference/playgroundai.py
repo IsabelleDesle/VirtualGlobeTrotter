@@ -1,5 +1,9 @@
 from huggingface_hub import InferenceClient
+import sys
+import os
+sys.path.insert(0, os.path.abspath('./AI_Atvars/'))
 import Constants
+
 client = InferenceClient("playgroundai/playground-v2.5-1024px-aesthetic", 
                          token=Constants.HUGGINGFACE_API_KEY)
 

@@ -3,7 +3,11 @@ from PIL import Image
 import time
 import io
 import time
+import sys
+import os
+sys.path.insert(0, os.path.abspath('./AI_Atvars/'))
 import Constants
+import datetime
 #
 #   Ghibksy model
 # Very nice, but stylized
@@ -33,4 +37,5 @@ print(response)
 
 # image = Image.open(io.BytesIO(response))
 
-response.save(r"C:\Users\Atvar\Desktop\year2\Team Project\images\ghibsky\scaled_pond_in_forest.jpg")
+save_path = os.path.abspath('./AI_Atvars/images/flux-midjourney/{0}.jpg'.format(datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")))
+response.save(save_path)

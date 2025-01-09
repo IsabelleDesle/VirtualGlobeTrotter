@@ -21,7 +21,6 @@ except subprocess.CalledProcessError as e:
 t.sleep(40)
 
 
-
 # Connect to Elasticsearch
 def connect_to_elasticSearch(): 
     client = Elasticsearch("http://localhost:9200/")
@@ -121,12 +120,8 @@ def search_images(es, index, search_terms, output_file):
         else:
             print("No results found.")
 
-
-
-
     except Exception as e:
         print(f"Error during Elasticsearch search: {e}")
-
 
 try: 
     input_file = r"./voice_input.json"
@@ -149,6 +144,4 @@ except KeyboardInterrupt:
     print("exit")
              
         
-
-
 

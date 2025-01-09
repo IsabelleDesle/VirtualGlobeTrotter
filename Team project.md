@@ -145,7 +145,7 @@ scenario:
 - make a Ai pipeline
 - unity research 
 - pregenerate images (make account/key + pull github first)
--
+
 
 
 

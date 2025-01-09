@@ -1,69 +1,80 @@
+import pandas as pd
+from elasticsearch import Elasticsearch
+from elasticsearch.helpers import bulk
 import json
 import speech_recognition as sr
 import time as t
-from elasticsearch import Elasticsearch
 
-def transcribe_voice_input(output_file):
-    recognizer = sr.Recognizer()
+#run compose.yaml first! 
+import subprocess
 
-    with sr.Microphone() as source:
-        print("Adjusting for ambient noise, please wait...")
-        recognizer.adjust_for_ambient_noise(source)
+# Define the command
+command = ["docker", "compose", "up", "--build", "-d"]
 
-        start_time = t.time()
-        transcriptions = []
+# Execute the command
+try:
+    subprocess.run(command, check=True)
+    print("Docker Compose up --build executed successfully! Wait ... ")
+except subprocess.CalledProcessError as e:
+    print(f"An error occurred: {e}")
 
-        try:
-            while True:
-                elapsed_time = t.time() - start_time
+t.sleep(40)
 
-                print("Listening...")
-                print(f"Time elapsed: {elapsed_time:.2f} seconds")
 
-                if elapsed_time > 10:
-                    print("")
-                    break
+# Connect to Elasticsearch
+def connect_to_elasticSearch(): 
+    client = Elasticsearch("http://localhost:9200/")
 
-                audio = recognizer.listen(source)
+    if not client.ping():
+        print("Elasticsearch connection failed.")
+        exit()
 
-                try:
-                    text = recognizer.recognize_google(audio, language="en-US")
-                    print("You said: " + text)
-                    transcriptions.append({"timestamp": elapsed_time, "text": text})
-                except sr.UnknownValueError:
-                    print("")
-                except sr.RequestError as e:
-                    print(f"Could not request results from Google Web Speech service; {e}")
+    print("Connected to Elasticsearch!")
 
-        except KeyboardInterrupt:
-            print("Transcription stopped.")
+    # Load the CSV file into a pandas DataFrame
+    csv_file =   "./images_path.csv"
+    df = pd.read_csv(csv_file, delimiter=";")
 
-        with open(output_file, "w") as f:
-            json.dump(transcriptions, f, indent=4)
+    # Define the index name
+    index_name = "images"  # Replace with your desired index name
+
+    # Convert DataFrame to a list of dictionaries
+    records = df.to_dict(orient="records")
+
+    # Prepare the data for bulk upload
+    actions = [
+        {
+            "_index": index_name,
+            "_source": record
+        }
+        for record in records
+    ]
+
+    # Create the index and upload data
+    try:
+        # Create index if it doesn't exist
+        if not client.indices.exists(index=index_name):
+            client.indices.create(index=index_name)
+
+        # Bulk upload
+        bulk(client, actions)
+        print(f"Data from {csv_file} uploaded successfully to index '{index_name}'!")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    
+    return client
 
 def read_search_terms_from_file(filename):
     try:
         with open(filename, 'r') as file:
             data = json.load(file)
             search_terms = " ".join([entry["text"] for entry in data])
-            print(f"Search terms: {type(search_terms)}")
+            
         return search_terms
     except FileNotFoundError:
         print(f"Error: The file {filename} does not exist.")
         return None
 
-def connect_to_elasticsearch():
-    try:
-        es = Elasticsearch([{"host": "localhost", "port": 5601}])
-        if es.ping():
-            print("Connected to Elasticsearch!")
-        else:
-            print("Failed to connect to Elasticsearch.")
-            return None
-        return es
-    except Exception as e:
-        print(f"Error connecting to Elasticsearch: {e}")
-        return None
 
 def search_images(es, index, search_terms, output_file):
     try:
@@ -108,25 +119,29 @@ def search_images(es, index, search_terms, output_file):
                     json.dump(transcriptions, f, indent=4)
         else:
             print("No results found.")
+
     except Exception as e:
         print(f"Error during Elasticsearch search: {e}")
 
-def main():
-    output_file = r"C:\\Users\\desle\\LOCAL_STUFF\\LOC_2S1_005_TEAM_PROJECT\\VirtualGlobeTrotter\\Database\\prompt.json"
+try: 
+    input_file = r"./voice_input.json"
+    output_file = r"./output.json"
+    search_terms = read_search_terms_from_file(input_file)
 
-    transcribe_voice_input(output_file)
-    print(f"Transcript saved to {output_file}")
-    print("")
-
-    search_terms = read_search_terms_from_file(output_file)
     if not search_terms:
-        return
-
-    es = connect_to_elasticsearch()
-    if es is None:
-        return
-
+        search_terms = "Disney"
+        
+    es = connect_to_elasticSearch()
     search_images(es, index="images", search_terms=search_terms, output_file=output_file)
 
-if __name__ == "__main__":
-    main()
+    while True:
+        a = input("another search? Please enter or type No to stop  ")
+        if a == "no" or a == "No": 
+            break
+        else: 
+            search_images(es, index="images", search_terms=a, output_file=output_file)
+except KeyboardInterrupt:
+    print("exit")
+             
+        
+

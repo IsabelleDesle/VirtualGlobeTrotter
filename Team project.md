@@ -105,7 +105,48 @@ using json format to connect applications
 merge webservice repo into to other
 researching ai pipeline: webservice=>voice input=>json file=>database=>path added in json file =>unity=>reads periodically the json file=>show assets in path in json file in immersive room 
 
-test in immersive room: Thursday 09/01 - 10:30. Meeting at immersive room. project on USB stick
+test in immersive room: Thursday 09/01 - 10:30. Meeting at immersive room. project on USB stick -> rescheduled for Friday 10:30.
+
+09/01/2025
+morning brief:
+- Isabelle: working on the AI Pipeline class - database part. Getting the string from the API and searching throught the database for the appropriate enviroment, outputting a path to the folder where the images can be found. Couple of options for getting an output: 
+    - random folder path based on the continent(the initial environment, shown in the immersive room after selecting the continent) (should be a separate function); 
+    - specific folder path based on the voice input: searching through a database using the input from a child. If the relevance of the search is close to zero, then we generate new images by using the AI pipeline code.
+
+- Viola: starting creating the AI pipeline code by using the models that Atvars provided.
+
+- Atvars: working on changing the images in the environment using code.
+
+github virtual globetrotter for everything concerning the project i.e. the code, presentations, emails, meeting notes. 
+
+08/01/2025
+- meeting with Nathan Segers: 
+    - immersive room needs a 5G adapter for internet. Tom Decavele will join us Friday at 10:30 in the immersive room 
+    - pc in immersive room will connect with our laptop or vm via internet. 
+    - Using the howest VPN it is possible to contact the pc from outside howest. So the generated images can be tested on the pc
+    - we can make use of the comfy Ai script from Devine to make images. Videos are not doable 
+    - the comfy script contains positive and negative prompt but also the adjustment to the needed size and resolution.     
+- plan a first meeting with ergo next week. 
+- Ai pipeline needed: to define how data transfer from webservice (flask)=> voice input for database (elastic search) or generate image=> unity => immersive room 
+scenario: 
+    1/ the child is in the immersive room and clicks on a continent (South-America, North-America, Europe, Asia-Middle-East, Oceania, Africa)
+    2/ an image is chosen randomly based on the chosen continent
+    3/ the child can ask for another image with voice input
+    4/ voice input = a string
+    5/ database elastic search is addressed to find relevant image based on continent + voice input
+    6/  if relevance > 0, images are shown in immersive room
+        else: new image is generated based on continent + voice input. In meantime the current image is still shown. 
+    7/ go back to 3/
+- using docker for ElasticSearch
+- images need to be generated on beforehand. The more images we have the better. Account and access token needed on hugging face.
+
+
+09/01/2025
+- make a Ai pipeline
+- unity research 
+- pregenerate images (make account/key + pull github first)
+-
+
 
 
 

@@ -1,13 +1,13 @@
 [
     {
         "timestamp": 0.0,
-        "text": "Libery",
-        "ID": "1GwqR5QB91pc-Z5H9Yaf",
-        "Title": "Statue of Liberty (New York, USA)",
-        "Relevance": 5.021736,
-        "Image Path": "C:/Users/Images/StatueOfLiberty/",
-        "continent": "North-America",
-        "Tags": "Landmark, History, Family Fun, USA",
-        "Content": "The Statue of Liberty is an iconic symbol of freedom with guided tours. ..."
+        "text": "sand",
+        "ID": "B2mmS5QBSBU-OpKh90xV",
+        "Title": "Mount Fuji (Japan)",
+        "Relevance": 2.12109,
+        "Image Path": "C:/Users/Images/MountFuji/",
+        "continent": "Asia-Middle-East",
+        "Tags": "Mountain, Japan, Travel, Nature, Hiking, Fuji, Iconic Landmark, Adventure, Climbing, Beautiful Views, Lakes, Landscape, Culture, Outdoors",
+        "Content": "Mount Fuji, Japan\u2019s highest and most famous peak, is a stunning and iconic mountain.It is renowned for its perfectly symmetrical cone shape and its spiritual significance in Japanese culture.Visitors can hike to the summit during the clim..."
     }
 ]

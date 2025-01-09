@@ -9,7 +9,7 @@ import pandas as pd
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 import json
-import speech_recognition as sr
+
 import time
 import subprocess
 from random import randint

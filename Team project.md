@@ -105,7 +105,17 @@ using json format to connect applications
 merge webservice repo into to other
 researching ai pipeline: webservice=>voice input=>json file=>database=>path added in json file =>unity=>reads periodically the json file=>show assets in path in json file in immersive room 
 
-test in immersive room: Thursday 09/01 - 10:30. Meeting at immersive room. project on USB stick
+test in immersive room: Thursday 09/01 - 10:30. Meeting at immersive room. project on USB stick -> rescheduled for Friday 10:30.
+
+09/01/2025
+morning brief:
+- Isabelle: working on the AI Pipeline class - database part. Getting the string from the API and searching throught the database for the appropriate enviroment, outputting a path to the folder where the images can be found. Couple of options for getting an output: 
+    - random folder path based on the continent(the initial environment, shown in the immersive room after selecting the continent) (should be a separate function); 
+    - specific folder path based on the voice input: searching through a database using the input from a child. If the relevance of the search is close to zero, then we generate new images by using the AI pipeline code.
+
+- Viola: starting creating the AI pipeline code by using the models that Atvars provided.
+
+- Atvars: working on changing the images in the environment using code.
 
 github virtual globetrotter for everything concerning the project i.e. the code, presentations, emails, meeting notes. 
 

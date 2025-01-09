@@ -1,13 +1,13 @@
 [
     {
         "timestamp": 0.0,
-        "text": "eiffl",
-        "ID": "GWJES5QB9DauXjYKlryE",
-        "Title": "Eiffel Tower (France)",
-        "Relevance": 6.949538,
-        "Image Path": "C:/Users/Images/EiffelTower/",
-        "continent": "Europe",
-        "Tags": "Eiffel Tower, Paris, City, France, Architecture, Landmark, Travel, Tourism, History, Culture, Iconic Destinations, Views, Romantic, Engineering Marvel",
-        "Content": "The Eiffel Tower is an iconic landmark located in Paris, France. Known for its stunning architecture and breathtaking views, this iron lattice tower attracts millions of visitors each year. It stands as a symbol of French culture and history."
+        "text": "Libery",
+        "ID": "1GwqR5QB91pc-Z5H9Yaf",
+        "Title": "Statue of Liberty (New York, USA)",
+        "Relevance": 5.021736,
+        "Image Path": "C:/Users/Images/StatueOfLiberty/",
+        "continent": "North-America",
+        "Tags": "Landmark, History, Family Fun, USA",
+        "Content": "The Statue of Liberty is an iconic symbol of freedom with guided tours. ..."
     }
 ]

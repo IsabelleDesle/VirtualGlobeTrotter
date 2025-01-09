@@ -4,6 +4,9 @@ AI_Atvars/Constants.py
 AI_Atvars/huggingFaceInference.py
 AI_Atvars/promptEnhancer.py
 
+# For Ids
+Database/Archive/
+
 # Ignore .env file
 .env
 .ipynb_checkpoints

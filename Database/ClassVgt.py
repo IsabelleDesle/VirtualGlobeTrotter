@@ -36,7 +36,7 @@ class VGT:
             exit()
 
         # Load the CSV file into a pandas DataFrame
-        csv_file = "./images_path.csv"
+        csv_file = "./csv/images_path.csv"
         df = pd.read_csv(csv_file, delimiter=";")
 
         # Define the index name
@@ -176,16 +176,16 @@ class VGT:
         with open(text_file, "w") as t:
             t.write(image_path)
 
-def main():
-    vgt = VGT()
-    vgt.start_docker_services()
-    vgt.connect_to_elasticSearch()
+# def main():
+#     vgt = VGT()
+#     vgt.start_docker_services()
+#     vgt.connect_to_elasticSearch()
 
-    while True:
-        input_file = input("Enter the input file path (or type 'exit' to stop): ")
-        if input_file.lower() == 'exit':
-            break
-        vgt.return_image_path(input_file)
+#     while True:
+#         input_file = input("Enter the input file path (or type 'exit' to stop): ")
+#         if input_file.lower() == 'exit':
+#             break
+#         vgt.return_image_path(input_file)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()

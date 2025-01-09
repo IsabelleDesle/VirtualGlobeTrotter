@@ -1,13 +1,13 @@
 [
     {
         "timestamp": 0.0,
-        "text": "nature",
-        "ID": "CGwrR5QB91pc-Z5HUpk4",
-        "Title": "Maasai Mara Safari (Kenya)",
-        "Relevance": 2.859545,
-        "Image Path": "C:/Users/Images/MaasaiMara/",
-        "continent": "Africa",
-        "Tags (for testing)": "Wildlife, Nature, Kenya, Adventure",
-        "Content (for testing)": "A safari in Maasai Mara introduces kids to Africa's incredible wildlife. ..."
+        "text": "eiffl",
+        "ID": "GWJES5QB9DauXjYKlryE",
+        "Title": "Eiffel Tower (France)",
+        "Relevance": 6.949538,
+        "Image Path": "C:/Users/Images/EiffelTower/",
+        "continent": "Europe",
+        "Tags": "Eiffel Tower, Paris, City, France, Architecture, Landmark, Travel, Tourism, History, Culture, Iconic Destinations, Views, Romantic, Engineering Marvel",
+        "Content": "The Eiffel Tower is an iconic landmark located in Paris, France. Known for its stunning architecture and breathtaking views, this iron lattice tower attracts millions of visitors each year. It stands as a symbol of French culture and history."
     }
 ]

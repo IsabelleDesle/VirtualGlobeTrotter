@@ -1,0 +1,1 @@
+HUGGINGFACE_API_KEY = "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" # You need to generate an API key from Hugging Face, and place it in a Constants.py file in this folder

@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.0.5" pages="2">
   <diagram name="Page-1" id="TU3EMJKjntG5enpKzaqt">
-    <mxGraphModel dx="1379" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1213" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -125,6 +125,54 @@
         </mxCell>
         <mxCell id="ulWbj46W632ExUqRgGwG-52" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="310" y="820" width="10" height="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="uNrHmZVw_3_oVvUd1lB_" name="Page-2">
+    <mxGraphModel dx="1213" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YtFRsIG38_3xeetEY-qq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YtFRsIG38_3xeetEY-qq-6" target="YtFRsIG38_3xeetEY-qq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-6" value="Text-To-Text model rewrites the prompt to create a better image" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="90" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YtFRsIG38_3xeetEY-qq-8" target="YtFRsIG38_3xeetEY-qq-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-8" value="&lt;div&gt;Text-To-Image model creates the image&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="170" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YtFRsIG38_3xeetEY-qq-12" target="YtFRsIG38_3xeetEY-qq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-12" value="Inpainting model seamlessly fills in the sides of the image to make it full 360 degrees" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-16" value="Upscaling model makes the image bigger without a significant loss in the quality or details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="330" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YtFRsIG38_3xeetEY-qq-18" target="YtFRsIG38_3xeetEY-qq-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-18" value="User selects the continent and speaks out prompt on the website" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-24" value="Image is generated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="410" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YtFRsIG38_3xeetEY-qq-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YtFRsIG38_3xeetEY-qq-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="419.76" y="390" as="sourcePoint" />
+            <mxPoint x="419.76" y="410" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

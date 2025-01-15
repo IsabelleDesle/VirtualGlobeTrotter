@@ -1,16 +1,21 @@
 # Python Script (image_sender.py)
 import socket
 import os
+import PIL
 from PIL import Image
 import io
 
-def send_image(image_path, host='127.0.0.1', port=12345):
+# PIL.Image.MAX_IMAGE_PIXELS = 933120000 needs to be set
+import PIL.Image
+
+def send_image(image_path, host='localhost'
+, port=12345):
     # Open and convert image to bytes
     with Image.open(image_path) as img:
         # Convert image to RGB if it's not
         if img.mode != 'RGB':
             img = img.convert('RGB')
-        
+
         # Save to bytes
         img_byte_arr = io.BytesIO()
         img.save(img_byte_arr, format='PNG')
@@ -40,4 +45,6 @@ def send_image(image_path, host='127.0.0.1', port=12345):
 
 # Example usage
 if __name__ == "__main__":
-    send_image(r"C:\Users\Atvar\Desktop\year2\VirtualGlobeTrotter\AI_Atvars\images\flux-dev\panorama1.png")
+    PIL.Image.MAX_IMAGE_PIXELS = 933120000
+    send_image(r"C:\Users\Atvar\Desktop\year2\VirtualGlobeTrotter\AI_Atvars\images\flux-dev\japan_forest.jpg")
+    # print(PIL.__file__)  # prints, e. g., /usr/lib/python3/dist-packages/PIL/__init__.py

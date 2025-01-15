@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.0.5">
   <diagram name="Page-1" id="gYPvYl9qdKIMyPJZguIg">
-    <mxGraphModel dx="1103" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1107" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,7 +65,7 @@
         <mxCell id="TnImfGeaR-GWyji84rdv-8" value="Database" style="whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="76" y="250" width="94" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="TnImfGeaR-GWyji84rdv-9" value="360° IMAGE 1 replaces IMAGE 0 in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
+        <mxCell id="TnImfGeaR-GWyji84rdv-9" value="360° IMAGE 1 replaces SLIDESHOW in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="275" width="300" height="55" as="geometry" />
         </mxCell>
         <mxCell id="TnImfGeaR-GWyji84rdv-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="TnImfGeaR-GWyji84rdv-11" target="TnImfGeaR-GWyji84rdv-17" edge="1">
@@ -129,7 +129,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="bjCGSRyUa7d-QVjPtdOn-17" value="360° IMAGE 0 (placeholder) shown in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
+        <mxCell id="bjCGSRyUa7d-QVjPtdOn-17" value="360° SLIDESHOW shown in the immersive room" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="60" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bjCGSRyUa7d-QVjPtdOn-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="bjCGSRyUa7d-QVjPtdOn-17" target="fvEkBXh12r8Sc9a3koQC-2" edge="1">
@@ -144,7 +144,7 @@
             <mxPoint x="342" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uIS00wXWQ7J_3eTjbd-p-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bjCGSRyUa7d-QVjPtdOn-22">
+        <mxCell id="uIS00wXWQ7J_3eTjbd-p-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bjCGSRyUa7d-QVjPtdOn-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="500" as="targetPoint" />
           </mxGeometry>

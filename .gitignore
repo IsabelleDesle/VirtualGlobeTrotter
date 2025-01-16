@@ -6,6 +6,7 @@ AI_Atvars/promptEnhancer.py
 
 # For Ids
 Database/Archive/
+*.csv
 
 # Ignore .env file
 .env

@@ -1,3 +1,4 @@
 Unity scripts that we use for changing and receiving images
 They are originally in the Unity project, but it is too large to push to a repo.
 
+There were a lot more files, but most of them got scrapped, so now only 2 scripts are used for image receiving, slideshows, setting newly received images.

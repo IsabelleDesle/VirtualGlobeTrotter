@@ -146,8 +146,77 @@ scenario:
 - unity research 
 - pregenerate images (make account/key + pull github first)
 
+Friday 10/01/2024
+- test in immersive room with Thibaut, Tom De cavele, Viola, Isabelle and Atvars to connect pc immersive room to internet.
+- internet needed to get the image to show in imm.room. 5g adapter needed that's why Tom is also present.
+
+  during test: ethernet is added, no need for the 5g adapter anymore. 
+- the laptop will have to make connection to the pc of the imm room using a static ip and the same network as the pc.
+did't work but image can be tested: the resolution must be higher. 8k by wall, not for the entire image.
+ethernet connection will be fast enough for this. Some installation has to be done in the unity application
+
+- to do : make docker work, run elastic search and python in docker. 
 
 
+Monday 13/01/2024
+
+connect pc immersive room to laptop's ip address and laptop uses docker to access elastic search 
+or to generate new images. This can not be done in docker as its allocated space is limited. 
+asking Thibaut and Nathan how to connect. Have to be on the same network (not eduroam)
+
+to do : needed 1 app.py file to use invoice input (if none then use "random") and to output a path to an existing image 
+or to start the image generator to generate a new one using AI : in meantime show a slideshow of existing images. 
+
+negative prompt can be used to exclude profanity 
+assignment P2P for first week: too late to upload but no grading for this. Friday it counts for 10%
+
+show images in a slideshow while waiting the generation of new image (space bar necessary? no use of keyboard is better )
+
+Atvars researches the text to audio part and further unity 
+2morrow 14/01: test the immersive room with generated images to see if impainting is okay 
+
+to test python file without running in docker 
+
+Tuesday 14/01
+- search and generate image works, docker only for elastic search
+- incorporate searching in db into the class of the environmentgeneration and run the whole ai line on 1 laptop
+- images are inpainted using other model.
+- testing in imm room: the connection works but laptop and pc of imm room: firewall needs to be disabled. 
+- unity doesn't show new image
+- resolution is a lot better
+
+ Wednesday 15/01
+ - prepare presentation based on introduct.week
+ - prepare demo for friday:
+ -    * start docker on 1 laptop
+      * access elastic search on laptop 2 + webservice, register voice input and continent search in elastic search,
+      * based on relevance create new image, inpaint and upscale and send to laptop3
+      * unity runs on laptop 3 and shows new image. in meantime show slideshow;
+  - film the demo in case a lve demo is not possible in presentation Friday.
+  - define a scenario on beforehand: which continent & voice input for existing image and what voice input for new image. 
+  - prepare document functional analysis, based on doc of intro week.
+  - unity change to receive and show new image. images don't need to be saved in unity folder. 
+  - audio need to be added later
+
+Thursday 16/01
+- finish the presentation & doc functional analysis 
+- improve relevance of found images
+- research ai model for audio
+- prepare and design doc
+  
+- images in unity:
+   -  import images = 12345 port:
+   Automatically creates and saves the Skybox material,
+   which means that an image sent to this port
+   will be included in the slideshow when the project is run afterwards.
+   - show images: 12346 port:
+   For just showing the images.
+   Works both in Unity editor, and in production.
+   Does not save the images
+
+Friday 17/01
+- 10:30 presentation in Penta 
+- 13:30 test in imm room
 
 
 

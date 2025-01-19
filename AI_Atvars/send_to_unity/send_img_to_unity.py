@@ -46,5 +46,5 @@ def send_image(image_path, host='localhost'
 # Example usage
 if __name__ == "__main__":
     PIL.Image.MAX_IMAGE_PIXELS = 933120000
-    send_image(r"C:\Users\Atvar\Downloads/upscaled_swapped_camels in the desert.jpg")
+    send_image(r"C:\Users\Atvar\Downloads/upscaled_swapped_belgium.jpg")
     # print(PIL.__file__)  # prints, e. g., /usr/lib/python3/dist-packages/PIL/__init__.py

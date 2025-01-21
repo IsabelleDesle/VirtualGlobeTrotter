@@ -218,5 +218,30 @@ Friday 17/01
 - 10:30 presentation in Penta 
 - 13:30 test in imm room
 
+Monday 20/01
+- test in imm room at 10:00
+- some images show edges, other are not shown completely 
+improvement of elastic search queries: and operator added to search for all the words, 
+stop words are not taken into account, higher score for field title than for field content, 
+boost score if phrase in query is found completely, relevance threshold = 8, fuziness 1,
+no fuziness for searching phrase. 
+- fun facts on the image: no func facts anymore, instead 8 or more CTAI robots will be shown in a image
+during the generation of a new image. The viewer is asked to search the 8 CTAI robots while waiting
+no slide show will be shown during waiting.
+- audio ambient sound : category Nature, City, Ocean, City, Underwater, Wind
+  filename format = nature-sheep in a meadom.jpg, underwater-coral reef.jpg
+- webservice is accessible via mobile phone, layout is consistent and pretty
+- prompt need to be better to generate more realistic images of animals
+- final test with IlseMeerschaert, Laura Kyndt, Marie, Thibaut, Jordy, Charlotte Larmuseau planned Friday 24th
+
+Tuesdag 21/01: 
+- prompt enhancing
+- audio
+- robot on random places in image
+- image creation must be ready Thursday, inclusive the csv with the content
+- for now category for audio will be added manually, a random sound is used for on the spot generated images.
+- fix on map website  
+
+
 
 

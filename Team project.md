@@ -242,6 +242,29 @@ Tuesdag 21/01:
 - for now category for audio will be added manually, a random sound is used for on the spot generated images.
 - fix on map website  
 
+Wednesday 22/01
+22/01 meeting 
+Ingenix to run website. To mention in installation guide. 
+at 11:00 imm room meeting for audio test 
+Connect game to backend of website
+Other todo’s in Trello : 
+Fun facts: became find the robot game (test it today)
+Fill the csv . 
+Map is fixed
+Pregenerate images (ids) put them on a own own drive in folder image/asia en share the folder on teams. Name csv images_path_isabelle. 
 
+Clean code (ids) env generator; erase the comments except explain what the code does. Between ‘’’      ‘’’ 
+But read the file, or calculate the number and other repetitive things delete
+Remove repetitive things too. Head and tail can be deleted too, because not used anymore. 
+
+Github organization (ids).
+Main thing now: pregenerate images.connecting everything
+Put the 
+Inpainting image nice to have maybe. 
+TO DO: Nice to have: category. Text to txt model: gemma 2 b to enhance prompt. Put propmpt in there, based on this sentence, choose the category that is appropriate. 
+
+FROM FRIDAY presentation and documents, user manual and installation guide, retrospective. P2P due on evening Tuesday. . look at the assignments 
+
+Monday installation guide. On Monday at Markebekestraat, and Tuesday.
 
 

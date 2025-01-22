@@ -243,7 +243,6 @@ Tuesdag 21/01:
 - fix on map website  
 
 Wednesday 22/01
-22/01 meeting 
 Ingenix to run website. To mention in installation guide. 
 at 11:00 imm room meeting for audio test 
 Connect game to backend of website
@@ -265,6 +264,8 @@ TO DO: Nice to have: category. Text to txt model: gemma 2 b to enhance prompt. P
 
 FROM FRIDAY presentation and documents, user manual and installation guide, retrospective. P2P due on evening Tuesday. . look at the assignments 
 
-Monday installation guide. On Monday at Markebekestraat, and Tuesday.
+Functional analysis this weekend adjust and add (ids)
+Monday installation guide. On Monday and Tuesday at Markebekestraat
+
 
 

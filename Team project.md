@@ -267,5 +267,26 @@ FROM FRIDAY presentation and documents, user manual and installation guide, retr
 Functional analysis this weekend adjust and add (ids)
 Monday installation guide. On Monday and Tuesday at Markebekestraat
 
+23/01
+test in imm room at 14:00 with Jordy. This is the last test before the test with Ilse M on Friday. 
+images must be available in the database: monuments, animals and landscapes. 
+Marvel and comic book, and cartoon images are more difficult
 
+An A4 with tips for voice input should be available in the imm room : 
+be specific and detailled. not just "animal" but "giraffe in the forest"
+not just "rome" but "colloseum in Rome on a sunny day"
+not just "beach" but "beach, sun, blue ocean and palm trees"
+
+the friendliness of AI: 
+AI will generate images of animals in natural environment rather than in a zoo.
+AI will generate images of dolphins in an ocean rather than in a dolphinarium
+AI will generate images of free birds instead of caged ones. 
+AI will not generate cartoon, game or film characters to respect the creator (designer conduct)
+
+meeting at the HQ at  12:30. 
+isabelle: images of Africa + monuments in Belgium, try zoo
+Atvars: Australia: the same 
+viola: South and North America
+Atvars will also be working on UI and unity today
+Viola and Isabelle: implement the random voice input concept this afternoon
 

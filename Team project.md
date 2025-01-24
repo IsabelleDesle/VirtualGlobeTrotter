@@ -303,7 +303,9 @@ from now focus on presentation, documents, user manual, installation guide
 - viola: installation guide, design doc
 - atvars: unity part
 - isabelle: functional analysis. all technical explanations that are now in the presentation
-  must be transferred in the functional analysis. + use manual and installation guide. 
+  must be transferred in the functional analysis. + use manual and installation guide.
+
+retrospective (ok)
   
 Documents to hand in: 
 1/Presentation (PDF)

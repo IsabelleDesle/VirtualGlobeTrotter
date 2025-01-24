@@ -290,3 +290,37 @@ viola: South and North America
 Atvars will also be working on UI and unity today
 Viola and Isabelle: implement the random voice input concept this afternoon
 
+24/01/2025
+- no images need to be created from now on. 
+
+from now focus on presentation, documents, user manual, installation guide
+- ppt is on one drive.
+- this weekend each of us thinks about what we want to talk about in 3 minutes.
+- before the presentation: start the laptop and the video
+- book a immers room test on Monday. preferable in the morning.
+- monday afternoon: rehearsel of the presentation .
+
+- viola: installation guide, design doc
+- atvars: unity part
+- isabelle: functional analysis. all technical explanations that are now in the presentation
+  must be transferred in the functional analysis. + use manual and installation guide. 
+  
+Documents to hand in: 
+1/Presentation (PDF)
+Brief introduction of the project (content + technical approach)
+Scrum conclusion (not a weekly review, but a summary including the sprint backlogs, retrospectives, and time tracking)
+WHY IS YOUR PROJECT IMPORTANT. WHAT DO THE CUSTOMER WANT? HOW DID YOU SOLVE IT? 
+no technical explanation. keep it high level: we used a special software unity for..., after researching a lot of possibilities we used Elastic searhc as database because of the full text search to find existing images corresponding to the input. 
+
+2/ Final version of the Functional Analysis  (PDF)
+Problem definition and proposed solution, target audience analysis, comparison with existing solutions, core MVP features, user flow diagrams, wireframes, and results from user testing.
+(Includes updates based on additional user test information and iterations after the interim evaluation.)
+
+3/ Final version of the Design Document (PDF)
+
+4/ User Manual for the Client (PDF)
+(This manual should enable the user to get started with the solution.)
+
+5/ Installation Guide (technical aspect) (PDF)
+(Explains how the client can set up/install the project and get it running.)
+Zip file containing the project source code (ZIP)

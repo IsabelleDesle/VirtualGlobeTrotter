@@ -8,7 +8,7 @@ import io
 # PIL.Image.MAX_IMAGE_PIXELS = 933120000 needs to be set
 import PIL.Image
 
-def send_image(image_path, host='localhost'
+def send_image(image_path, host='Atvars'
 , port=12346):
     # Open and convert image to bytes
     with Image.open(image_path) as img:
@@ -47,17 +47,17 @@ def send_image(image_path, host='localhost'
 if __name__ == "__main__":
     from random import shuffle
     import time
-    start_path = "C:/Users/Atvar/Downloads/isa_img"
-    possible_images = os.listdir(start_path)
+    # start_path = "C:/Users/Atvar/Downloads/isa_img"
+    # possible_images = os.listdir(start_path)
+    # # print(possible_images[0])
+    # shuffle(possible_images)
     # print(possible_images[0])
-    shuffle(possible_images)
-    print(possible_images[0])
-    print(possible_images[0].split("-")[1]) # To check whether ambient music can play
-    PIL.Image.MAX_IMAGE_PIXELS = 933120000
+    # print(possible_images[0].split("-")[1]) # To check whether ambient music can play
+    # PIL.Image.MAX_IMAGE_PIXELS = 933120000
     # for image in possible_images:
     #     send_image(f"{start_path}/{image}")
     #     time.sleep(1)
 
     # send_image(f"{start_path}/{possible_images[0]}")
     send_image(r"C:/Users/Atvar/Desktop/year2/VirtualGlobeTrotter/AI_Atvars/images/flux-dev/japan forest.jpg")
-    # print(PIL.__file__)  # prints, e. g., /usr/lib/python3/dist-packages/PIL/__init__.py
+    # print(PIL.__file__)

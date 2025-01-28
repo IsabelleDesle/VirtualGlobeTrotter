@@ -326,3 +326,14 @@ Problem definition and proposed solution, target audience analysis, comparison w
 5/ Installation Guide (technical aspect) (PDF)
 (Explains how the client can set up/install the project and get it running.)
 Zip file containing the project source code (ZIP)
+
+27/01/25
+- 10:00 : immersive room to record the project to show during presentation and as plan b for live demo. 
+- working on documents: user manual, installation guide, functional analysis, design document and poster
+
+28/01/25
+- making the presentation. Adding the video.
+- Preparing the text and timing it to divide speaking time equally
+- make the zip for the source code (after short meeting with frederik).
+- poster is ready to print in howest 
+  

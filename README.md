@@ -8,3 +8,5 @@ We have used various AI models to create a completely free-to-use, self-hosted A
 
 ## 👁️ What does it look like?
 
+<img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Pictures/japan.gif" width="200" height="400" />
+<img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Pictures/japan.gif" width="200" height="400" />

@@ -49,3 +49,5 @@ To show the image, the score must be at least 8 and the image with the highest s
  
 If no matching image is found, a new image is generated. The resulting image is stored, and its metadata, including 
 the folder path, prompt, title, and continent, is added to the database.  
+
+## Unity

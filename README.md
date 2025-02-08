@@ -49,3 +49,29 @@ To show the image, the score must be at least 8 and the image with the highest s
  
 If no matching image is found, a new image is generated. The resulting image is stored, and its metadata, including 
 the folder path, prompt, title, and continent, is added to the database.  
+
+## 🌐 Webservice
+
+The website component of our project facilitates user interaction with the immersive room through a multi-page 
+interface, hosted on a local network. This web application leverages the Flask framework to handle backend logic, 
+incorporating several key endpoints:
+- /process-request: This endpoint receives the user-selected continent and transcribed voice input from 
+the frontend, returning the request status and a corresponding message. In the absence of voice input, a 
+random environment from the chosen continent is retrieved from the database and displayed in the 
+immersive room. 
+- /generate_environment: This endpoint establishes a connection to the Elastic Search database, searching 
+for a relevant image based on the voice input and continent. If a matching image is found, its path is sent 
+to the Unity application for display in the immersive room. Otherwise, the AI pipeline functions are utilized 
+to generate a new image, which is then sent to Unity for display. 
+
+The frontend is built using Vue.js, providing a visually appealing and intuitive user interface across multiple pages:
+- Starting view: A simple page featuring an AI-generated background and a start button that initializes the 
+application.
+- World Map view: An interactive page displaying a world map, where each continent is a clickable button. 
+Upon selection, the chosen continent's value is stored and transmitted to the subsequent page. 
+- Loading view: A transitional page that appears after continent selection, where an API request is made to 
+retrieve or generate the environment. 
+- Voice Recording view: A page enabling users to provide a unique voice prompt, which is transcribed and 
+sent to the API for environment retrieval or generation.
+
+## 👾 Unity

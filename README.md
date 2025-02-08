@@ -7,9 +7,21 @@
 We have used various AI models to create a completely free-to-use, self-hosted AI pipeline that lets users generate seamless 360 degree images, using only their voice input.
 
 ## 👁️ What Does It Look Like?
-<p float="left">
-  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Pictures/japan.gif" width="200" height="400" />
-  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Pictures/ocean.gif" width="200" height="400" />
+<p>
+  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Presentation/GIFs/japan.gif" 
+    width="200" height="400" 
+    hspace="200"/>
+  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Presentation/GIFs/ocean.gif" 
+    width="200" height="400"
+    hspace="400"/>
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Presentation/GIFs/jungle.gif" 
+    width="400" height="225" />
+  <img src="https://github.com/IsabelleDesle/VirtualGlobeTrotter/blob/main/Presentation/GIFs/owl.gif" 
+    width="400" height="225" />
 </p>
 
 ## 🧠 AI Pipeline
@@ -75,3 +87,5 @@ retrieve or generate the environment.
 sent to the API for environment retrieval or generation.
 
 ## 👾 Unity
+
+The 

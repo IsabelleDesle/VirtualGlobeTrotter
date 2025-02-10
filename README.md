@@ -88,4 +88,12 @@ sent to the API for environment retrieval or generation.
 
 ## 👾 Unity
 
-The 
+- Responsible for visual and audio components of the project
+- Displays AI generated images in the immersive environment by changing the skybox
+- Plays audio from 5 distinct categories:
+  - City
+  - Nature
+  - Ocean
+  - Underwater
+  - Ambient
+- Contains minigame to distract users while a new image is generating
